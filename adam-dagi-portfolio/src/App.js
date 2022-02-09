@@ -1,5 +1,11 @@
 import Header from './components/Header.jsx';
 import Footer from './components/Footer.jsx';
+import WebFont from 'webfontloader';
+WebFont.load({
+  google: {
+    families: ['Varela Round', 'sans-serif']
+  }
+})
 
 function App() {
   return (
