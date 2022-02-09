@@ -1,13 +1,96 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.main {
+  background-image: url(./images/fon.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header-conteiner {
+  background-image: url(./images/font-header22.png);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 300px;
 }
+
+.page-conteiner {
+  width: 100%;
+  height: 950px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card {
+  width: 90%;
+  height: 90%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.profile-picture {
+  background-image: url(./images/ava.jpeg);
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-name {
+  font-size: 50px;
+}
+
+.profile-location-icon {
+  background-image: url(./images/map-pin.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.location {
+  font-size: 25px;
+}
+
+.profile-bio {
+  font-size: 20px;
+}
+
+.graduation-icon {
+  background-image: url(./images/graduat.jpeg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.graduation-uni {
+  font-size: 20px;
+}
+
+.footer-conteiner {
+  width: 100%;
+  height: 100px;
+}
+
