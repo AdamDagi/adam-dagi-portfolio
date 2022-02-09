@@ -92,5 +92,45 @@
 .footer-conteiner {
   width: 100%;
   height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.instagram {
+  color: black;
+}
+
+a.github {
+  color: black;
+}
+
+a.whatsapp {
+  color: green;
+}
+
+a.google {
+  color: #C20806;
+}
+
+a.stackoverflow {
+  color: orange;
+}
