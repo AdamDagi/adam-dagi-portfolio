@@ -4,6 +4,11 @@ const Contact = () => {
     return (
         <div className='ContactForm'>
             <form  className='contactForm' id='contact-form' noValidate>
+                <div className="contact-header-cont">
+                    <div className="contact-header">
+                        <h1>CONTACT ME</h1>
+                    </div>
+                </div>
                 {/* Row 1 of form */}
                 <div className='FormHeader'>
                     <div className='NameInput'>
