@@ -24,6 +24,9 @@ html, body {
   height: 75%;
   margin: 0px;
   padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-conteiner {
@@ -219,4 +222,106 @@ a.google {
 
 a.stackoverflow {
   color: orange;
+}
+
+.ContactForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 85%;
+  width: 70%;
+  height: 70%;
+}
+
+.contactForm {
+  width: 100%;
+  height: 100%;
+}
+
+.FormHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.formInput {
+  width: 100%;
+  height: 100%;
+}
+
+.NameInput {
+  width: 45%;
+  height: 30%;
+}
+
+.nameInput {
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #7CB719;
+  font-size: 16px;
+}
+
+.EmailInput {
+  width: 45%;
+  height: 30%;
+}
+
+.emailInput {
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #7CB719;
+  font-size: 16px;
+}
+
+.MessageInputConteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+.MessageInput {
+  width: 95%;
+  height: 100%;
+}
+
+.messageInput {
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #7CB719;
+  font-size: 16px;
+}
+
+.SubmitButtonConteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #47817D;
+  background: black;
+  color: #7CB719;
+  width: 40%;
+  height: 35%;
+  font-size: 18px;
 }
