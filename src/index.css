@@ -1,0 +1,583 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  background-image: url(./images/fon.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main {
+  font-family: 'Varela Round', sans-serif;
+  width: 100%;
+  height: 75%;
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-conteiner {
+  background-image: url(./images/font-header22.png);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.navigation-conteiner {
+  width: 100%;
+  height: 0%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10em 3em;
+  text-align: center;
+  font-family: 'Varela Round', sans-serif;
+}
+
+.navigation-conteiner a {
+  color: #FFF;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.navigation-conteiner a:hover {
+  font-size: 25px;
+}
+
+div.navigation-conteiner a:before, div.navigation-conteiner a:after {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+div.navigation-conteiner a:after {
+  border-width: 2px;
+  transition: all 0.4s;
+}
+
+div.navigation-conteiner a:hover:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.navigation-conteiner a:hover:after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+a.active {
+  color: #47817D;
+  font-size: 20px;
+}
+
+.page-conteiner {
+  width: 100%;
+  height: 950px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-card {
+  width: 90%;
+  height: 90%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  background-image: url(./images/ava.jpeg);
+  vertical-align: middle;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.profile-name {
+  font-size: 50px;
+}
+
+.profile-location-icon {
+  background-image: url(./images/map-pin.svg);
+  width: 40px;
+  height: 40px;
+}
+
+.location {
+  font-size: 25px;
+}
+
+.profile-bio {
+  font-size: 20px;
+  margin-top: 60px;
+}
+
+.uversity-section {
+  margin-top: 60px;
+}
+
+.graduation-icon {
+  background-image: url(./images/graduat.jpeg);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.graduation-uni {
+  font-size: 20px;
+}
+
+.footer-conteiner {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+a.social {
+  margin: 0 1rem;
+  transition: transform 250ms;
+  display: inline-block;
+}
+
+a.social:hover {
+  transform: translateY(-2px);
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.facebook {
+  color: #4968ad;
+}
+
+a.instagram {
+  color: #c32aa3;
+}
+
+a.github {
+  color: white;
+}
+
+a.whatsapp {
+  color: green;
+}
+
+a.google {
+  color: #ea4335;
+}
+
+a.stackoverflow {
+  color: orange;
+}
+
+a.linkedin {
+  color: #0E76A8;
+}
+
+.ContactForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 85%;
+  width: 70%;
+  height: 70%;
+}
+
+.contactForm {
+  width: 100%;
+  height: 100%;
+}
+
+.FormHeader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.contact-header-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 0px;
+  height: 10%;
+  width:100%;
+  margin-top: 5px;
+}
+
+.contact-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 5px;
+  color: white;
+  margin-top: 15px;
+}
+
+.formInput {
+  width: 100%;
+  height: 100%;
+}
+
+.NameInput {
+  width: 45%;
+  height: 30%;
+}
+
+.nameInput {
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #7CB719;
+  font-size: 16px;
+}
+
+.EmailInput {
+  width: 45%;
+  height: 30%;
+}
+
+.emailInput {
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #7CB719;
+  font-size: 16px;
+}
+
+.MessageInputConteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 60%;
+}
+
+.MessageInput {
+  width: 95%;
+  height: 100%;
+}
+
+.messageInput {
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+  width: 100%;
+  height: 100%;
+  background: black;
+  color: #7CB719;
+  font-size: 16px;
+}
+
+.SubmitButtonConteiner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 20%;
+}
+
+.submit-btn {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: #47817D;
+  background: black;
+  color: #7CB719;
+  width: 40%;
+  height: 35%;
+  font-size: 18px;
+}
+
+.portfolio {
+  width: 95%;
+  height: 95%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: auto;
+}
+
+.colomn-1 {
+  width: 45%;
+  height: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.colomn-2 {
+  width: 45%;
+  height: 100%;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-one, .project-two, .project-three, .project-four, .project-five, .project-six {
+  width: 100%;
+  height: 48%;
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 2px solid;
+  border-color: #47817D;
+}
+
+.one, .two, .three, .four, .five, .six {
+  width: 100%;
+  height: 20%;
+  margin: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.one, .two, .three, .four, .five, .six {
+  background-color: rgb(0, 0, 0, 0.6);
+}
+
+.project-one {
+  background-image: url(./images/1.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-two {
+  background-image: url(./images/2.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-three {
+  background-image: url(./images/3.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-four {
+  background-image: url(./images/4.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-five {
+  background-image: url(./images/5.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-six {
+  background-image: url(./images/6.jpeg);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+a.git {
+  color: white;
+}
+
+.project-conteiner .project-title {
+  color: #FFF;
+  text-decoration: none;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.project-conteiner a:hover {
+  font-size: 25px;
+}
+
+div.project-conteiner a:before, div.project-conteiner a:after {
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  border: 4px solid #0277bd;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  border-radius: 50%;
+  background: transparent;
+  content: "";
+  opacity: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+div.project-conteiner a:after {
+  border-width: 2px;
+  transition: all 0.4s;
+}
+
+div.project-conteiner a:hover:before {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1);
+}
+
+div.project-conteiner a:hover:after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-50%) scale(1.3);
+}
+
+.resume-conteiner {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 5%;
+  margin-top: 5px;
+}
+
+.resume-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 100%;
+  background-color: rgb(0, 0, 0, 0.4);
+  border-radius: 5px;
+  color: white;
+  margin-top: 15px;
+}
+
+.resume-document {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 40%;
+  margin-top: 15px;
+}
+
+.resume-one {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20%;
+  height: 80%;
+}
+
+.res-one {
+  background-image: url(./images/Screen\ Shot\ 2022-02-10\ at\ 12.54.14\ PM.png);
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+}
+
+.resume-info {
+  color: white;
+  background-color: rgb(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+  margin-top: 15px;
+}
