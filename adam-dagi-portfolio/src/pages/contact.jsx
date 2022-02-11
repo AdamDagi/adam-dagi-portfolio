@@ -1,6 +1,10 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
   
 const Contact = () => {
+    const inputRef = useRef();
+    useEffect(() => {
+        inputRef.current.focus();
+    });
     return (
         <div className='ContactForm'>
             <form  className='contactForm' id='contact-form' noValidate>
@@ -22,6 +26,7 @@ const Contact = () => {
                     <div className='EmailInput'>
                         <input
                         type='email'
+                        ref={inputRef}
                         name='email'
                         className='emailInput'
                         placeholder='Email address'

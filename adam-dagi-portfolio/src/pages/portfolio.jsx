@@ -1,7 +1,8 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-    faGithub
+    faGithub,
+    faChrome
 } from "@fortawesome/free-brands-svg-icons";
   
 const Portfolio = () => {
@@ -16,6 +17,10 @@ const Portfolio = () => {
                                 className="github social git">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
+                            <a href="https://icons8.com/icon/4GI9wMeqgsuD/application"
+                                className="github social git faChrome">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
+                            </a>
                         </ul>
                     </div>
                     <div className="project-two project-conteiner">
@@ -25,6 +30,10 @@ const Portfolio = () => {
                                 className="github social git">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
+                            <a href="https://icons8.com/icon/4GI9wMeqgsuD/application"
+                                className="github social git faChrome">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
+                            </a>
                         </ul>
                     </div>
                     <div className="project-three project-conteiner">
@@ -33,6 +42,10 @@ const Portfolio = () => {
                             <a href="https://www.github.com/learnbuildteach"
                                 className="github social git">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
+                            </a>
+                            <a href="https://icons8.com/icon/4GI9wMeqgsuD/application"
+                                className="github social git faChrome">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
                             </a>
                         </ul>
                     </div>
@@ -45,6 +58,10 @@ const Portfolio = () => {
                                 className="github social git">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
+                            <a href="https://icons8.com/icon/4GI9wMeqgsuD/application"
+                                className="github social git faChrome">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
+                            </a>
                         </ul>
                     </div>
                     <div className="project-five project-conteiner">
@@ -54,6 +71,10 @@ const Portfolio = () => {
                                 className="github social git">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
                             </a>
+                            <a href="https://icons8.com/icon/4GI9wMeqgsuD/application"
+                                className="github social git faChrome">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
+                            </a>
                         </ul>
                     </div>
                     <div className="project-six project-conteiner">
@@ -62,6 +83,10 @@ const Portfolio = () => {
                             <a href="https://www.github.com/learnbuildteach"
                                 className="github social git">
                                 <FontAwesomeIcon icon={faGithub} size="2x" />
+                            </a>
+                            <a href="https://icons8.com/icon/4GI9wMeqgsuD/application"
+                                className="github social git faChrome">
+                                <FontAwesomeIcon icon={faChrome} size="2x" />
                             </a>
                         </ul>
                     </div>

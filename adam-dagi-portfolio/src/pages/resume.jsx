@@ -11,7 +11,8 @@ const Resume = () => {
                 </div>
                 <div className="resume-document">
                     <ul className="resume-one">
-                        <a href="#" className="res-one"></a>
+                        <div className="res-one">
+                        </div>
                     </ul>
                 </div>
                 <div className="resume-info">

@@ -101,6 +101,11 @@ div.navigation-conteiner a:hover:after {
   transform: translateX(-50%) translateY(-50%) scale(1.3);
 }
 
+a.active {
+  color: #47817D;
+  font-size: 20px;
+}
+
 .page-conteiner {
   width: 100%;
   height: 950px;
@@ -217,11 +222,15 @@ a.whatsapp {
 }
 
 a.google {
-  color: #C20806;
+  color: #ea4335;
 }
 
 a.stackoverflow {
   color: orange;
+}
+
+a.linkedin {
+  color: #0E76A8;
 }
 
 .ContactForm {
