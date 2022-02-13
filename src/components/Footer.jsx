@@ -33,11 +33,11 @@ const Footer = () => {
                     className="instagram social">
                     <FontAwesomeIcon icon={faInstagram} size="2x" />
                 </a>
-                <a href="https://+1(646) 325 46-27"
+                <a href="https://wa.me/16463254627"
                     className="whatsapp social">
                     <FontAwesomeIcon icon={faWhatsapp} size="2x" />
                 </a>
-                <a href="https://mugutdinovshiha02@gmail.com"
+                <a href="mailto:mugutdinovshiha02@gmail.com"
                     className="google social">
                     <FontAwesomeIcon icon={faGoogle} size="2x" />
                 </a>

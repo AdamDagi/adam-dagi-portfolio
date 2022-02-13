@@ -1,4 +1,12 @@
 import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+    faCircleDown,
+    faEnvelope
+} from "@fortawesome/free-regular-svg-icons";
+import {
+    faPrint
+} from "@fortawesome/free-solid-svg-icons";
   
 const Resume = () => {
     return (
@@ -12,6 +20,23 @@ const Resume = () => {
                 <div className="resume-document">
                     <ul className="resume-one">
                         <div className="res-one">
+                            <div className="buttons-res-conteiner">
+                                <div className="resume-download">
+                                    <a href="../../documents/Shikhsaid_Mugutdinov_Resume.PDF" download="resume" target='_blank'>
+                                    <FontAwesomeIcon icon={faCircleDown} className="icon" size="2x" />
+                                    </a>
+                                </div>
+                                <div className="resume-email">
+                                    <a href="../../documents/Shikhsaid_Mugutdinov_Resume.PDF" email="resume" target='_blank'>
+                                    <FontAwesomeIcon icon={faEnvelope} className="icon" size="2x" />
+                                    </a>
+                                </div>
+                                <div className="resume-print">
+                                    <a href="../../documents/Shikhsaid_Mugutdinov_Resume.PDF" print="resume" target='_blank'>
+                                    <FontAwesomeIcon icon={faPrint} className="icon" size="2x" />
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </ul>
                 </div>
