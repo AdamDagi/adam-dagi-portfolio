@@ -50,7 +50,8 @@ const Contact = () => {
             hasError,
         }));
     };
-    const validateForm = () => {
+    const validateForm = (event) => {
+        event.preventDefault();
         if (name.value === '') {
             setName(currentValue => ({
                 ...currentValue,
