@@ -1,38 +1,77 @@
 import React, { useState } from "react";
   
 const Contact = () => {
-    const [name, setName] = useState('');
-    const [email, setEmail] = useState('');
-    const [message, setMessage] = useState('');
-    const [hasError, setError] = useState(false);
-    const [hasEmailError, setEmailError] = useState(false);
-    const [hasMessageError, setmessageError] = useState(false);
-    const nameBlurData = () => {
-        if (name === '') {
-          setError(true);
-          return;
-        }
-        setError(false);
+    const [name, setName] = useState({
+        value: "",
+        hasError: false,
+        touched: false,
+    });
+    const [email, setEmail] = useState({
+        value: "",
+        hasError: false,
+        touched: false,
+    });
+    const [message, setMessage] = useState({
+        value: "",
+        hasError: false,
+        touched: false,
+    });
+    const nameBlurData = (e) => {
+        let hasError = false;
+        if (e.target.value === '') {
+            hasError = true;
+        } 
+        setName(currentValue => ({
+            ...currentValue,
+            value: e.target.value,
+            hasError,
+        }));
     };
-    const emailBlurData = () => {
+    const emailBlurData = (e) => {
+        let hasError = false;
         const isValidEmail = /^([a-z0-9_.-]+)@([\da-z.-]+).([a-z.]{2,6})$/.test(email);
-        if (isValidEmail) {
-            setEmailError(false);
-        } else {
-            setEmailError(true);
-        }
+        if (!isValidEmail) {
+            hasError = true;
+        } 
+        setEmail(currentValue => ({
+            ...currentValue,
+            value: e.target.value,
+            hasError,
+        }));
     };
-    const messageBlurData = () => {
-        if (message === '') {
-            setmessageError(true);
-          return;
-        }
-        setmessageError(false);
+    const messageBlurData = (e) => {
+        let hasError = false;
+        if (e.target.value === '') {
+            hasError = true;
+        } 
+        setMessage(currentValue => ({
+            ...currentValue,
+            value: e.target.value,
+            hasError,
+        }));
     };
     const validateForm = () => {
-        nameBlurData();
-        emailBlurData();
-        messageBlurData();
+        if (name.value === '') {
+            setName(currentValue => ({
+                ...currentValue,
+                value: '',
+                hasError: true,
+            }));
+        }
+        if (email.value === '') {
+            setEmail(currentValue => ({
+                ...currentValue,
+                value: '',
+                hasError: true,
+            }));
+        }
+        if (message.value === '') {
+            setMessage(currentValue => ({
+                ...currentValue,
+                value: '',
+                hasError: true,
+            }));
+        }
     };
     return (
         <div className='ContactForm'>
@@ -50,10 +89,10 @@ const Contact = () => {
                             name='name'
                             className='nameInput errorInput'
                             placeholder='Name'
-                            onBlur={() => nameBlurData()}
+                            onBlur={nameBlurData}
                             onChange={e => setName(e.target.value)}
                         />
-                        {hasError ? <p style={{ color: 'red' }}>Name is required</p> : null}
+                        {name.hasError ? <p style={{ color: 'red' }}>Name is required</p> : null}
                     </div>
                     <div className='EmailInput'>
                         <input
@@ -61,10 +100,10 @@ const Contact = () => {
                             name='email'
                             className='emailInput errorInput'
                             placeholder='Email address' 
-                            onBlur={() => emailBlurData()}
+                            onBlur={emailBlurData}
                             onChange={e => setEmail(e.target.value)}
                         />
-                        {hasEmailError ? <p style={{ color: 'red' }}>Email is incorrect or empty</p> : null}
+                        {email.hasError ? <p style={{ color: 'red' }}>Email is incorrect or empty</p> : null}
                     </div>
                 </div>
                 {/* Row 2 of form */}
@@ -75,14 +114,14 @@ const Contact = () => {
                             name='message'
                             className='messageInput errorInput'
                             placeholder='Message'
-                            onBlur={() => messageBlurData()}
+                            onBlur={messageBlurData}
                             onChange={e => setMessage(e.target.value)}
                         />
-                        {hasMessageError ? <p style={{ color: 'red' }}>Message is required</p> : null}
+                        {message.hasError ? <p style={{ color: 'red' }}>Message is required</p> : null}
                     </div>
                 </div>
                 <div className='SubmitButtonConteiner'>
-                    <button onClick={() => validateForm()} className='submit-btn' type='submit'>
+                    <button onClick={validateForm} className='submit-btn' type='submit'>
                     Submit
                     </button>
                 </div>
