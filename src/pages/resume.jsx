@@ -37,7 +37,6 @@ const Resume = () => {
                                     </a>
                                 </div>
                             </div>
-                            <embed src="../../documents/Shikhsaid_Mugutdinov_Resume.PDF" width="500" height="375" type="application/pdf" id="pdfDocument"></embed>
                         </div>
                     </ul>
                 </div>
