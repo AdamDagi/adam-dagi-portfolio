@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/adam-dagi-portfolio/static/css/main.48ea2db9.css",
+    "main.js": "/adam-dagi-portfolio/static/js/main.db793895.js",
+    "static/media/4.jpeg": "/adam-dagi-portfolio/static/media/4.7098338ef4b446392e37.jpeg",
+    "static/media/6.jpeg": "/adam-dagi-portfolio/static/media/6.4f5f84c28cbccfa4329f.jpeg",
+    "static/media/1.jpeg": "/adam-dagi-portfolio/static/media/1.3545729cd7fa8cbeb9c7.jpeg",
+    "static/media/5.jpeg": "/adam-dagi-portfolio/static/media/5.37282e23f9e6ff73c834.jpeg",
+    "static/media/Screen Shot 2022-02-10 at 12.54.14 PM.png": "/adam-dagi-portfolio/static/media/Screen Shot 2022-02-10 at 12.54.14 PM.9a80ba68e9b596738197.png",
+    "static/media/3.jpeg": "/adam-dagi-portfolio/static/media/3.c7d4472ed2f9cd065a04.jpeg",
+    "static/media/font-header22.png": "/adam-dagi-portfolio/static/media/font-header22.90291a6eaf179a3208c4.png",
+    "static/media/2.jpeg": "/adam-dagi-portfolio/static/media/2.84b499500da73220d402.jpeg",
+    "static/media/fon.jpeg": "/adam-dagi-portfolio/static/media/fon.41bab4fe562957ba13d2.jpeg",
+    "static/media/ava.jpeg": "/adam-dagi-portfolio/static/media/ava.3792908949eeedd75a08.jpeg",
+    "static/media/graduat.jpeg": "/adam-dagi-portfolio/static/media/graduat.b4ad9b6f413307da211d.jpeg",
+    "static/media/map-pin.svg": "/adam-dagi-portfolio/static/media/map-pin.f5881af439df01d173d5.svg",
+    "index.html": "/adam-dagi-portfolio/index.html",
+    "main.48ea2db9.css.map": "/adam-dagi-portfolio/static/css/main.48ea2db9.css.map",
+    "main.db793895.js.map": "/adam-dagi-portfolio/static/js/main.db793895.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.48ea2db9.css",
+    "static/js/main.db793895.js"
+  ]
+}
