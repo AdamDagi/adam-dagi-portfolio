@@ -112,6 +112,7 @@ a.active {
   display:flex;
   align-items: center;
   justify-content: center;
+  overflow: auto;
 }
 
 .info-card {
@@ -121,6 +122,7 @@ a.active {
   align-items: center;
   justify-content: center;
   color: white;
+  overflow: auto;
 }
 
 .section {
@@ -439,7 +441,7 @@ a.linkedin {
 }
 
 .project-one {
-  background-image: url(./images/1.jpeg);
+  background-image: url(./images/project1\ pic.png);
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
@@ -448,7 +450,7 @@ a.linkedin {
 }
 
 .project-two {
-  background-image: url(./images/2.jpeg);
+  background-image: url(./images/QUIZ-APP.png);
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
@@ -457,7 +459,7 @@ a.linkedin {
 }
 
 .project-three {
-  background-image: url(./images/3.jpeg);
+  background-image: url(./images/BUDGET-TRACKER.png);
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
@@ -466,7 +468,7 @@ a.linkedin {
 }
 
 .project-four {
-  background-image: url(./images/4.jpeg);
+  background-image: url(./images/project2\ pic.png);
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
@@ -475,7 +477,7 @@ a.linkedin {
 }
 
 .project-five {
-  background-image: url(./images/5.jpeg);
+  background-image: url(./images/TECH-BLOG.png);
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
@@ -484,7 +486,7 @@ a.linkedin {
 }
 
 .project-six {
-  background-image: url(./images/6.jpeg);
+  background-image: url(./images/WEATHER-FORECAST.png);
   position: relative;
   overflow: hidden;
   background-position: 50% 50%;
